@@ -1,4 +1,4 @@
-package jenkins;
+package demo;
 
 import java.time.Duration;
 
@@ -7,20 +7,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class JenkinsTest
-{
+public class JenkinsTest {
 	@Test
-	public void  launch()
-	{
+	public void launch() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		
+
 		driver.get("https://demowebshop.tricentis.com/");
-		Reporter.log("demo web shop launched",true);
+		Reporter.log("demo web shop launched", true);
 	}
+
 	{
-		
+
 	}
 
 }
